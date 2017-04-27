@@ -1,13 +1,16 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
+#include <stdio.h>
+#include <stdlib.h>
 
 import socket
 import main
 from game import *
 import  random
 import time
+from sys import argv
 
-hote = "localhost"
+hote = argv[1]
 port = 40000
 
 connexion_avec_serveur = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
