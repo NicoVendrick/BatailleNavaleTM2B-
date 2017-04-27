@@ -1,6 +1,1 @@
-Bon c'est pas très avancé et un peu instable.. pour l'instant le serveur permet à 2 joueurs de jouer successivement,
-et à un 3ème client d'assister au jeu en tant que spectateur 
--> Le jeu démarre automatiquement dès que 2 clients sont connectés 
-(j'ai pas encore touché à ça donc pour l'instant il faut que ce soit Thread-1 et Thread-2)
--> Quand le 3ème joueur se connecte, il est spectateur et reçoit automatiquement les coups/grilles des 2 joueurs
-(pareil j'ai gardé la contrainte des noms pour l'instant.. le 3ème client doit être Thread-3) 
+2 joueurs peuvent jouer en réseau il suffit de lancer serveur.py puis client.py, lorsque le nombre de joueurs est suffisant (2 joueurs) la partie commence et les autres joueurs qui se connecteront seront des spectatateur. Les règles du jeux restent les mêmes que le jeu d'origine avec en plus possibilité d'abandon en écrivant "FIN" dans un input, possibilité de recommencer et cumule des scores d'une partie à l'autre.
