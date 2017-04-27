@@ -230,7 +230,7 @@ class ThreadClient(threading.Thread):
                                     if currentPlayer==0: 
                                         del conn_client["Thread-1"]
                                         conn_client["Thread-2"].send("print'JEU EN PAUSE : Adversaire déconnecté'\n")
-                                        time.sleep(25)
+                                        time.sleep(30)
                                         
                                         if isInConn_client("Thread-1"):
                                             displayPlayerShot(game,currentPlayer)
@@ -243,7 +243,7 @@ class ThreadClient(threading.Thread):
                                         
                                         del conn_client["Thread-2"]
                                         conn_client["Thread-1"].send("print'JEU EN PAUSE : Adversaire déconnecté'\n")
-                                        time.sleep(25)
+                                        time.sleep(30)
                                         
                                         if isInConn_client("Thread-2"):
                                             displayPlayerShot(game,currentPlayer)
